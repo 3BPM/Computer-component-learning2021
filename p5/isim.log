@@ -1,0 +1,125 @@
+ISim log file
+Running: E:\myCO\p5\tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb E:/myCO/p5/tb_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+----------------------------------------------------------------------
+INFO:Security:51 - The XILINXD_LICENSE_FILE environment variable is not set.
+INFO:Security:53 - The LM_LICENSE_FILE environment variable is not set.
+INFO:Security:68a - user is Robert, on host 3BPM_LAPTOP.
+WARNING:Security:43 - No license file was found in the standard Xilinx license directory.
+WARNING:Security:44 - Since no license file was found,
+       please run the Xilinx License Configuration Manager
+       (xlcm or "Manage Xilinx Licenses")
+       to assist in obtaining a license.
+ERROR:Security:14 - No feature was available for 'ISIM'.
+
+No such feature exists.
+Feature:       ISIM
+License path:  C:/.Xilinx;C:\Xilinx\14.7\ISE_DS\ISE\/coregen/core_licenses\Xilinx.lic;C:\Xilinx\14.7\ISE_DS\ISE\/coregen/core_licenses\XilinxFree.lic;C:\Xilinx\14.7\ISE_DS\EDK/data/core_licenses\Xilinx.lic;
+FLEXnet Licensing error:-5,357
+For further information, refer to the FLEXnet Licensing documentation,
+available at "www.flexerasoftware.com".
+----------------------------------------------------------------------
+WARNING: A full ISim License cannot be checked out due to the issues listed above. Please use Xilinx License Configuration Manager to fix these issues in order to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+                  45@00003000: $16 <= 00000068
+                  45@00003004: *00000004 <= 00000068
+                  65@00003008: $16 <= 0000000c
+                  65@0000300c: *00000008 <= 0000000c
+                  85@00003010: $16 <= 0000005c
+                  85@00003014: *0000000c <= 0000005c
+                 105@00003018: $16 <= 00000050
+                 105@0000301c: *00000010 <= 00000050
+                 125@00003020: $16 <= 0000004c
+                 125@00003024: *00000014 <= 0000004c
+                 145@00003028: $16 <= 00000044
+                 145@0000302c: *00000018 <= 00000044
+                 165@00003030: $16 <= 00000038
+                 165@00003034: *0000001c <= 00000038
+                 185@00003038: $16 <= 0000006c
+                 185@0000303c: *00000020 <= 0000006c
+                 205@00003040: $16 <= 00000040
+                 205@00003044: *00000024 <= 00000040
+                 225@00003048: $16 <= 00000004
+                 225@0000304c: *00000028 <= 00000004
+                 245@00003050: $16 <= 00000010
+                 245@00003054: *0000002c <= 00000010
+                 265@00003058: $16 <= 00000074
+                 265@0000305c: *00000030 <= 00000074
+                 285@00003060: $16 <= 0000001c
+                 285@00003064: *00000034 <= 0000001c
+                 305@00003068: $16 <= 00000060
+                 305@0000306c: *00000038 <= 00000060
+                 325@00003070: $16 <= 0000002c
+                 325@00003074: *0000003c <= 0000002c
+                 345@00003078: $16 <= 00000008
+                 345@0000307c: *00000040 <= 00000008
+                 365@00003080: $16 <= 00000014
+                 365@00003084: *00000044 <= 00000014
+                 385@00003088: $16 <= 00000028
+                 385@0000308c: *00000048 <= 00000028
+                 405@00003090: $16 <= 00000058
+                 405@00003094: *0000004c <= 00000058
+                 425@00003098: $16 <= 00000048
+                 425@0000309c: *00000050 <= 00000048
+                 445@000030a0: $16 <= 00000020
+                 445@000030a4: *00000054 <= 00000020
+                 465@000030a8: $16 <= 00000064
+                 465@000030ac: *00000058 <= 00000064
+                 485@000030b0: $16 <= 00000034
+                 485@000030b4: *0000005c <= 00000034
+                 505@000030b8: $16 <= 00000078
+                 505@000030bc: *00000060 <= 00000078
+                 525@000030c0: $16 <= 00000018
+                 525@000030c4: *00000064 <= 00000018
+                 545@000030c8: $16 <= 0000003c
+                 545@000030cc: *00000068 <= 0000003c
+                 565@000030d0: $16 <= 00000054
+                 565@000030d4: *0000006c <= 00000054
+                 585@000030d8: $16 <= 00000070
+                 585@000030dc: *00000070 <= 00000070
+                 605@000030e0: $16 <= 00000030
+                 605@000030e4: *00000074 <= 00000030
+                 625@000030e8: $16 <= 00000024
+                 625@000030ec: *00000078 <= 00000024
+                 645@000030f0: $ 1 <= 00005b25
+                 655@000030f4: $ 2 <= 00005b25
+                 665@000030f8: $ 3 <= 00005b25
+                 675@000030fc: $ 4 <= 00005b25
+                 685@00003100: $ 5 <= 00005b25
+                 695@00003104: $ 6 <= 00005b25
+                 705@00003108: $ 7 <= 00005b25
+                 715@0000310c: $ 8 <= 00005b25
+                 725@00003110: $ 9 <= 00005b25
+                 735@00003114: $10 <= 00005b25
+                 745@00003118: $11 <= 00005b25
+                 755@0000311c: $12 <= 00005b25
+                 765@00003120: $13 <= 00005b25
+                 775@00003124: $14 <= 00005b25
+                 785@00003128: $15 <= 00005b25
+                 795@0000312c: $16 <= 00005b25
+                 805@00003130: $17 <= 00005b25
+                 815@00003134: $18 <= 00005b25
+                 825@00003138: $19 <= 00005b25
+                 835@0000313c: $20 <= 00005b25
+                 845@00003140: $21 <= 00005b25
+                 855@00003144: $22 <= 00005b25
+                 865@00003148: $23 <= 00005b25
+                 875@0000314c: $24 <= 00005b25
+                 885@00003150: $25 <= 00005b25
+                 895@00003154: $26 <= 00005b25
+                 905@00003158: $27 <= 00005b25
+                 915@0000315c: $28 <= 00005b25
+                 925@00003160: $29 <= 00005b25
+                 935@00003164: $30 <= 00005b25
+                 945@00003168: $31 <= 00005b25
+                 955@0000316c: $ 8 <= 00000008
+                 965@00003170: $10 <= ffffd000
+                 975@00003174: $31 <= 0000000c
+                 985@00003178: $31 <= 0000005c

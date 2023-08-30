@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/CH/Desktop/verilog/p5/Dji.xst" -ofn "C:/Users/CH/Desktop/verilog/p5/Dji.syr" 
+vhdtdtfi -lang verilog -prj p5 -o C:/Users/CH/Desktop/verilog/p5/Dji.tfi -lib work C:/Users/CH/Desktop/verilog/p5//Dji.v -module Dji -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

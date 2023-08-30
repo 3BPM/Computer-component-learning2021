@@ -1,0 +1,499 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.21 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.21 secs
+ 
+--> Reading design: Iji.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Iji.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Iji"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : Iji
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\CH\Desktop\verilog\p5\pc.v" into library work
+Parsing module <pc>.
+Analyzing Verilog file "C:\Users\CH\Desktop\verilog\p5\im.v" into library work
+Parsing module <im>.
+Analyzing Verilog file "C:\Users\CH\Desktop\verilog\p5\Iji.v" into library work
+Parsing module <Iji>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Iji>.
+
+Elaborating module <pc>.
+
+Elaborating module <im>.
+Reading initialization file \"code.txt\".
+WARNING:HDLCompiler:1670 - "C:\Users\CH\Desktop\verilog\p5\im.v" Line 30: Signal <rom> in initial block is partially initialized.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Iji>.
+    Related source file is "C:\Users\CH\Desktop\verilog\p5\Iji.v".
+    Found 32-bit register for signal <D_pc4>.
+    Found 32-bit register for signal <D_instr>.
+    Summary:
+	inferred  64 D-type flip-flop(s).
+Unit <Iji> synthesized.
+
+Synthesizing Unit <pc>.
+    Related source file is "C:\Users\CH\Desktop\verilog\p5\pc.v".
+    Found 32-bit register for signal <pc4>.
+    Found 32-bit register for signal <pc>.
+    Found 32-bit adder for signal <npc[31]_GND_2_o_add_1_OUT> created at line 35.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  64 D-type flip-flop(s).
+Unit <pc> synthesized.
+
+Synthesizing Unit <im>.
+    Related source file is "C:\Users\CH\Desktop\verilog\p5\im.v".
+WARNING:Xst:647 - Input <pc<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <pc<31:12>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2999 - Signal 'rom', unconnected in block 'im', is tied to its initial value.
+    Found 1024x32-bit single-port Read Only RAM <Mram_rom> for signal <rom>.
+    Summary:
+	inferred   1 RAM(s).
+Unit <im> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 1024x32-bit single-port Read Only RAM                 : 1
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Registers                                            : 4
+ 32-bit register                                       : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:2677 - Node <pc_0> of sequential type is unconnected in block <pc>.
+WARNING:Xst:2677 - Node <pc_1> of sequential type is unconnected in block <pc>.
+WARNING:Xst:2677 - Node <pc_12> of sequential type is unconnected in block <pc>.
+WARNING:Xst:2677 - Node <pc_13> of sequential type is unconnected in block <pc>.
+WARNING:Xst:2677 - Node <pc_14> of sequential type is unconnected in block <pc>.
+WARNING:Xst:2677 - Node <pc_15> of sequential type is unconnected in block <pc>.
+WARNING:Xst:2677 - Node <pc_16> of sequential type is unconnected in block <pc>.
+WARNING:Xst:2677 - Node <pc_17> of sequential type is unconnected in block <pc>.
+WARNING:Xst:2677 - Node <pc_18> of sequential type is unconnected in block <pc>.
+WARNING:Xst:2677 - Node <pc_19> of sequential type is unconnected in block <pc>.
+WARNING:Xst:2677 - Node <pc_20> of sequential type is unconnected in block <pc>.
+WARNING:Xst:2677 - Node <pc_21> of sequential type is unconnected in block <pc>.
+WARNING:Xst:2677 - Node <pc_22> of sequential type is unconnected in block <pc>.
+WARNING:Xst:2677 - Node <pc_23> of sequential type is unconnected in block <pc>.
+WARNING:Xst:2677 - Node <pc_24> of sequential type is unconnected in block <pc>.
+WARNING:Xst:2677 - Node <pc_25> of sequential type is unconnected in block <pc>.
+WARNING:Xst:2677 - Node <pc_26> of sequential type is unconnected in block <pc>.
+WARNING:Xst:2677 - Node <pc_27> of sequential type is unconnected in block <pc>.
+WARNING:Xst:2677 - Node <pc_28> of sequential type is unconnected in block <pc>.
+WARNING:Xst:2677 - Node <pc_29> of sequential type is unconnected in block <pc>.
+WARNING:Xst:2677 - Node <pc_30> of sequential type is unconnected in block <pc>.
+WARNING:Xst:2677 - Node <pc_31> of sequential type is unconnected in block <pc>.
+
+Synthesizing (advanced) Unit <Iji>.
+INFO:Xst:3226 - The RAM <im/Mram_rom> will be implemented as a BLOCK RAM, absorbing the following register(s): <D_instr>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 32-bit                  |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <opc_pc>        |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <D_instr>       |          |
+    |     dorstA         | connected to signal <reset>         | high     |
+    | reset value        | 00000000000000000000000000000000               |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <Iji> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 1024x32-bit single-port block Read Only RAM           : 1
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Registers                                            : 96
+ Flip-Flops                                            : 96
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <pc_1> in Unit <pc> is equivalent to the following FF/Latch, which will be removed : <pc4_1> 
+INFO:Xst:2261 - The FF/Latch <pc_0> in Unit <pc> is equivalent to the following FF/Latch, which will be removed : <pc4_0> 
+
+Optimizing unit <Iji> ...
+
+Optimizing unit <pc> ...
+WARNING:Xst:2677 - Node <pc/pc_31> of sequential type is unconnected in block <Iji>.
+WARNING:Xst:2677 - Node <pc/pc_30> of sequential type is unconnected in block <Iji>.
+WARNING:Xst:2677 - Node <pc/pc_29> of sequential type is unconnected in block <Iji>.
+WARNING:Xst:2677 - Node <pc/pc_28> of sequential type is unconnected in block <Iji>.
+WARNING:Xst:2677 - Node <pc/pc_27> of sequential type is unconnected in block <Iji>.
+WARNING:Xst:2677 - Node <pc/pc_26> of sequential type is unconnected in block <Iji>.
+WARNING:Xst:2677 - Node <pc/pc_25> of sequential type is unconnected in block <Iji>.
+WARNING:Xst:2677 - Node <pc/pc_24> of sequential type is unconnected in block <Iji>.
+WARNING:Xst:2677 - Node <pc/pc_23> of sequential type is unconnected in block <Iji>.
+WARNING:Xst:2677 - Node <pc/pc_22> of sequential type is unconnected in block <Iji>.
+WARNING:Xst:2677 - Node <pc/pc_21> of sequential type is unconnected in block <Iji>.
+WARNING:Xst:2677 - Node <pc/pc_20> of sequential type is unconnected in block <Iji>.
+WARNING:Xst:2677 - Node <pc/pc_19> of sequential type is unconnected in block <Iji>.
+WARNING:Xst:2677 - Node <pc/pc_18> of sequential type is unconnected in block <Iji>.
+WARNING:Xst:2677 - Node <pc/pc_17> of sequential type is unconnected in block <Iji>.
+WARNING:Xst:2677 - Node <pc/pc_16> of sequential type is unconnected in block <Iji>.
+WARNING:Xst:2677 - Node <pc/pc_15> of sequential type is unconnected in block <Iji>.
+WARNING:Xst:2677 - Node <pc/pc_14> of sequential type is unconnected in block <Iji>.
+WARNING:Xst:2677 - Node <pc/pc_13> of sequential type is unconnected in block <Iji>.
+WARNING:Xst:2677 - Node <pc/pc_12> of sequential type is unconnected in block <Iji>.
+INFO:Xst:3203 - The FF/Latch <pc/pc4_2> in Unit <Iji> is the opposite to the following FF/Latch, which will be removed : <pc/pc_2> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Iji, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 73
+ Flip-Flops                                            : 73
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Iji.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 91
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 28
+#      MUXCY                       : 29
+#      VCC                         : 1
+#      XORCY                       : 30
+# FlipFlops/Latches                : 73
+#      FDR                         : 67
+#      FDS                         : 6
+# RAMS                             : 1
+#      RAMB36E1                    : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 97
+#      IBUF                        : 33
+#      OBUF                        : 64
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              73  out of  126800     0%  
+ Number of Slice LUTs:                   30  out of  63400     0%  
+    Number used as Logic:                30  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    103
+   Number with an unused Flip Flop:      30  out of    103    29%  
+   Number with an unused LUT:            73  out of    103    70%  
+   Number of fully used LUT-FF pairs:     0  out of    103     0%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                          98
+ Number of bonded IOBs:                  98  out of    210    46%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                1  out of    135     0%  
+    Number using Block RAM only:          1
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 74    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 0.653ns (Maximum Frequency: 1532.567MHz)
+   Minimum input arrival time before clock: 1.768ns
+   Maximum output required time after clock: 0.640ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 0.653ns (frequency: 1532.567MHz)
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               0.653ns (Levels of Logic = 0)
+  Source:            pc/pc4_2 (FF)
+  Destination:       D_pc4_2 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: pc/pc4_2 to D_pc4_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q              2   0.361   0.283  pc/pc4_2 (pc/pc4_2)
+     FDS:D                     0.008          D_pc4_2
+    ----------------------------------------
+    Total                      0.653ns (0.369ns logic, 0.283ns route)
+                                       (56.6% logic, 43.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 549 / 114
+-------------------------------------------------------------------------
+Offset:              1.768ns (Levels of Logic = 32)
+  Source:            npc<2> (PAD)
+  Destination:       pc/pc4_31 (FF)
+  Destination Clock: clk rising
+
+  Data Path: npc<2> to pc/pc4_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.001   0.279  npc_2_IBUF (npc_2_IBUF)
+     INV:I->O              1   0.113   0.000  pc/Madd_npc[31]_GND_2_o_add_1_OUT_lut<2>_INV_0 (pc/Madd_npc[31]_GND_2_o_add_1_OUT_lut<2>)
+     MUXCY:S->O            1   0.353   0.000  pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<2> (pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<3> (pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<4> (pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<5> (pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<6> (pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<7> (pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<8> (pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<9> (pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<10> (pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<11> (pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<12> (pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<13> (pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<14> (pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<15> (pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<16> (pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<17> (pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<18> (pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<19> (pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<20> (pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<21> (pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<21>)
+     MUXCY:CI->O           1   0.023   0.000  pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<22> (pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<22>)
+     MUXCY:CI->O           1   0.023   0.000  pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<23> (pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<23>)
+     MUXCY:CI->O           1   0.023   0.000  pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<24> (pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<24>)
+     MUXCY:CI->O           1   0.023   0.000  pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<25> (pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<25>)
+     MUXCY:CI->O           1   0.023   0.000  pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<26> (pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<26>)
+     MUXCY:CI->O           1   0.023   0.000  pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<27> (pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<27>)
+     MUXCY:CI->O           1   0.023   0.000  pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<28> (pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<28>)
+     MUXCY:CI->O           1   0.023   0.000  pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<29> (pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<29>)
+     MUXCY:CI->O           0   0.023   0.000  pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<30> (pc/Madd_npc[31]_GND_2_o_add_1_OUT_cy<30>)
+     XORCY:CI->O           1   0.370   0.000  pc/Madd_npc[31]_GND_2_o_add_1_OUT_xor<31> (pc/npc[31]_GND_2_o_add_1_OUT<31>)
+     FDR:D                     0.008          pc/pc4_31
+    ----------------------------------------
+    Total                      1.768ns (1.489ns logic, 0.279ns route)
+                                       (84.2% logic, 15.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              0.640ns (Levels of Logic = 1)
+  Source:            D_pc4_31 (FF)
+  Destination:       D_pc4<31> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: D_pc4_31 to D_pc4<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.361   0.279  D_pc4_31 (D_pc4_31)
+     OBUF:I->O                 0.000          D_pc4_31_OBUF (D_pc4<31>)
+    ----------------------------------------
+    Total                      0.640ns (0.361ns logic, 0.279ns route)
+                                       (56.4% logic, 43.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    0.653|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.32 secs
+ 
+--> 
+
+Total memory usage is 383492 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   46 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

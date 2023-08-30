@@ -1,0 +1,746 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.21 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.21 secs
+ 
+--> Reading design: Dji.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Dji.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Dji"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : Dji
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\CH\Desktop\verilog\p5\npc.v" into library work
+Parsing module <npc>.
+Analyzing Verilog file "C:\Users\CH\Desktop\verilog\p5\jiemakzq.v" into library work
+Parsing module <jiemakzq>.
+Analyzing Verilog file "C:\Users\CH\Desktop\verilog\p5\grf.v" into library work
+Parsing module <grf>.
+Analyzing Verilog file "C:\Users\CH\Desktop\verilog\p5\ext.v" into library work
+Parsing module <ext>.
+Analyzing Verilog file "C:\Users\CH\Desktop\verilog\p5\cmp.v" into library work
+Parsing module <cmp>.
+Analyzing Verilog file "C:\Users\CH\Desktop\verilog\p5\Dji.v" into library work
+WARNING:HDLCompiler:572 - "C:\Users\CH\Desktop\verilog\p5\Dji.v" Line 22: Macro <instrbuswk> is redefined.
+Parsing module <Dji>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Dji>.
+
+Elaborating module <jiemakzq>.
+WARNING:HDLCompiler:1127 - "C:\Users\CH\Desktop\verilog\p5\jiemakzq.v" Line 46: Assignment to shamt ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "C:\Users\CH\Desktop\verilog\p5\jiemakzq.v" Line 52: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\CH\Desktop\verilog\p5\jiemakzq.v" Line 53: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\CH\Desktop\verilog\p5\jiemakzq.v" Line 55: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\CH\Desktop\verilog\p5\jiemakzq.v" Line 56: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\CH\Desktop\verilog\p5\jiemakzq.v" Line 57: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\CH\Desktop\verilog\p5\jiemakzq.v" Line 58: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\CH\Desktop\verilog\p5\jiemakzq.v" Line 59: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\CH\Desktop\verilog\p5\jiemakzq.v" Line 60: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\CH\Desktop\verilog\p5\jiemakzq.v" Line 61: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\CH\Desktop\verilog\p5\jiemakzq.v" Line 62: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:1127 - "C:\Users\CH\Desktop\verilog\p5\Dji.v" Line 55: Assignment to nop ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "C:\Users\CH\Desktop\verilog\p5\Dji.v" Line 61: Result of 32-bit expression is truncated to fit in 1-bit target.
+
+Elaborating module <ext>.
+
+Elaborating module <grf>.
+"C:\Users\CH\Desktop\verilog\p5\grf.v" Line 47. $display @0: $0 <= 0
+"C:\Users\CH\Desktop\verilog\p5\grf.v" Line 49. $display @0: $0 <= 0
+
+Elaborating module <cmp>.
+WARNING:HDLCompiler:413 - "C:\Users\CH\Desktop\verilog\p5\cmp.v" Line 28: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\CH\Desktop\verilog\p5\Dji.v" Line 72: Result of 32-bit expression is truncated to fit in 1-bit target.
+
+Elaborating module <npc>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Dji>.
+    Related source file is "C:\Users\CH\Desktop\verilog\p5\Dji.v".
+WARNING:Xst:647 - Input <W_instrbus> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 5-bit register for signal <E_a2>.
+    Found 5-bit register for signal <E_a3>.
+    Found 32-bit register for signal <E_v1>.
+    Found 32-bit register for signal <E_v2>.
+    Found 1-bit register for signal <E_grf_en>.
+    Found 1-bit register for signal <E_dm_en>.
+    Found 32-bit register for signal <E_e32>.
+    Found 32-bit register for signal <E_pc>.
+    Found 11-bit register for signal <E_instrbus>.
+    Found 5-bit register for signal <E_a1>.
+    Found 32-bit subtractor for signal <pc4D[31]_GND_1_o_sub_9_OUT> created at line 117.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred 156 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <Dji> synthesized.
+
+Synthesizing Unit <jiemakzq>.
+    Related source file is "C:\Users\CH\Desktop\verilog\p5\jiemakzq.v".
+WARNING:Xst:737 - Found 1-bit latch for signal <a1<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <a1<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <a1<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <a1<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <a2<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <a2<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <a2<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <a2<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <a2<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <a3<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <a3<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <a3<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <a3<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <a3<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <a1<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred  15 Latch(s).
+	inferred  95 Multiplexer(s).
+Unit <jiemakzq> synthesized.
+
+Synthesizing Unit <ext>.
+    Related source file is "C:\Users\CH\Desktop\verilog\p5\ext.v".
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <ext> synthesized.
+
+Synthesizing Unit <grf>.
+    Related source file is "C:\Users\CH\Desktop\verilog\p5\grf.v".
+WARNING:Xst:647 - Input <pc> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1024-bit register for signal <n0051[1023:0]>.
+    Found 32-bit 32-to-1 multiplexer for signal <d1> created at line 40.
+    Found 32-bit 32-to-1 multiplexer for signal <d2> created at line 41.
+    Summary:
+	inferred 1024 D-type flip-flop(s).
+	inferred  34 Multiplexer(s).
+Unit <grf> synthesized.
+
+Synthesizing Unit <cmp>.
+    Related source file is "C:\Users\CH\Desktop\verilog\p5\cmp.v".
+    Found 32-bit comparator equal for signal <V1[31]_V2[31]_equal_1_o> created at line 28
+    Summary:
+	inferred   1 Comparator(s).
+Unit <cmp> synthesized.
+
+Synthesizing Unit <npc>.
+    Related source file is "C:\Users\CH\Desktop\verilog\p5\npc.v".
+    Found 32-bit adder for signal <pc4[31]_imm16[15]_add_1_OUT> created at line 31.
+    Found 32-bit adder for signal <pc4[31]_GND_21_o_add_4_OUT> created at line 35.
+    Found 32-bit 4-to-1 multiplexer for signal <npc> created at line 27.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   3 Multiplexer(s).
+Unit <npc> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 1
+ 32-bit subtractor                                     : 1
+# Registers                                            : 11
+ 1-bit register                                        : 2
+ 1024-bit register                                     : 1
+ 11-bit register                                       : 1
+ 32-bit register                                       : 4
+ 5-bit register                                        : 3
+# Latches                                              : 15
+ 1-bit latch                                           : 15
+# Comparators                                          : 1
+ 32-bit comparator equal                               : 1
+# Multiplexers                                         : 136
+ 1-bit 2-to-1 multiplexer                              : 96
+ 2-bit 2-to-1 multiplexer                              : 2
+ 32-bit 2-to-1 multiplexer                             : 36
+ 32-bit 32-to-1 multiplexer                            : 2
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 1
+ 32-bit subtractor                                     : 1
+# Registers                                            : 1180
+ Flip-Flops                                            : 1180
+# Comparators                                          : 1
+ 32-bit comparator equal                               : 1
+# Multiplexers                                         : 136
+ 1-bit 2-to-1 multiplexer                              : 96
+ 2-bit 2-to-1 multiplexer                              : 2
+ 32-bit 2-to-1 multiplexer                             : 36
+ 32-bit 32-to-1 multiplexer                            : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Dji> ...
+
+Optimizing unit <jiemakzq> ...
+
+Optimizing unit <grf> ...
+WARNING:Xst:1293 - FF/Latch <grf/r_31_992> has a constant value of 0 in block <Dji>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <grf/r_31_993> has a constant value of 0 in block <Dji>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <grf/r_31_994> has a constant value of 0 in block <Dji>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <grf/r_31_995> has a constant value of 0 in block <Dji>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <grf/r_31_996> has a constant value of 0 in block <Dji>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <grf/r_31_997> has a constant value of 0 in block <Dji>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <grf/r_31_998> has a constant value of 0 in block <Dji>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <grf/r_31_999> has a constant value of 0 in block <Dji>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <grf/r_31_1000> has a constant value of 0 in block <Dji>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <grf/r_31_1001> has a constant value of 0 in block <Dji>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <grf/r_31_1002> has a constant value of 0 in block <Dji>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <grf/r_31_1003> has a constant value of 0 in block <Dji>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <grf/r_31_1004> has a constant value of 0 in block <Dji>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <grf/r_31_1005> has a constant value of 0 in block <Dji>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <grf/r_31_1006> has a constant value of 0 in block <Dji>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <grf/r_31_1007> has a constant value of 0 in block <Dji>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <grf/r_31_1008> has a constant value of 0 in block <Dji>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <grf/r_31_1009> has a constant value of 0 in block <Dji>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <grf/r_31_1010> has a constant value of 0 in block <Dji>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <grf/r_31_1011> has a constant value of 0 in block <Dji>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <grf/r_31_1012> has a constant value of 0 in block <Dji>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <grf/r_31_1013> has a constant value of 0 in block <Dji>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <grf/r_31_1014> has a constant value of 0 in block <Dji>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <grf/r_31_1015> has a constant value of 0 in block <Dji>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <grf/r_31_1016> has a constant value of 0 in block <Dji>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <grf/r_31_1017> has a constant value of 0 in block <Dji>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <grf/r_31_1018> has a constant value of 0 in block <Dji>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <grf/r_31_1019> has a constant value of 0 in block <Dji>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <grf/r_31_1020> has a constant value of 0 in block <Dji>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <grf/r_31_1021> has a constant value of 0 in block <Dji>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <grf/r_31_1022> has a constant value of 0 in block <Dji>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <grf/r_31_1023> has a constant value of 0 in block <Dji>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <E_instrbus_6> in Unit <Dji> is equivalent to the following FF/Latch, which will be removed : <E_dm_en> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Dji, actual ratio is 4.
+FlipFlop E_instrbus_6 has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1148
+ Flip-Flops                                            : 1148
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Dji.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 2037
+#      GND                         : 1
+#      INV                         : 29
+#      LUT1                        : 1
+#      LUT2                        : 12
+#      LUT3                        : 1041
+#      LUT4                        : 3
+#      LUT5                        : 60
+#      LUT6                        : 696
+#      MUXCY                       : 69
+#      MUXF7                       : 64
+#      VCC                         : 1
+#      XORCY                       : 60
+# FlipFlops/Latches                : 1163
+#      FDR                         : 154
+#      FDRE                        : 992
+#      FDS                         : 2
+#      LD                          : 15
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 292
+#      IBUF                        : 103
+#      OBUF                        : 189
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1071  out of  126800     0%  
+ Number of Slice LUTs:                 1842  out of  63400     2%  
+    Number used as Logic:              1842  out of  63400     2%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1842
+   Number with an unused Flip Flop:     771  out of   1842    41%  
+   Number with an unused LUT:             0  out of   1842     0%  
+   Number of fully used LUT-FF pairs:  1071  out of   1842    58%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                         336
+ Number of bonded IOBs:                 293  out of    210   139% (*) 
+    IOB Flip Flops/Latches:              92
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-------------------------------------------------------+------------------------+-------+
+Clock Signal                                           | Clock buffer(FF name)  | Load  |
+-------------------------------------------------------+------------------------+-------+
+clk                                                    | BUFGP                  | 1148  |
+jiemakzq/subu_lui_OR_51_o(jiemakzq/subu_lui_OR_51_o3:O)| NONE(*)(jiemakzq/a3_0) | 15    |
+-------------------------------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 1.964ns (Maximum Frequency: 509.061MHz)
+   Minimum input arrival time before clock: 3.025ns
+   Maximum output required time after clock: 7.675ns
+   Maximum combinational path delay: 5.516ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 1.964ns (frequency: 509.061MHz)
+  Total number of paths / destination ports: 2976 / 1056
+-------------------------------------------------------------------------
+Delay:               1.964ns (Levels of Logic = 3)
+  Source:            grf/r_31_160 (FF)
+  Destination:       E_v1_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: grf/r_31_160 to E_v1_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             3   0.361   0.566  grf/r_31_160 (grf/r_31_160)
+     LUT6:I2->O            1   0.097   0.556  grf/Mmux_d1_81 (grf/Mmux_d1_81)
+     LUT6:I2->O            1   0.097   0.000  grf/Mmux_d1_3 (grf/Mmux_d1_3)
+     MUXF7:I1->O           3   0.279   0.000  grf/Mmux_d1_2_f7 (v1<0>)
+     FDR:D                     0.008          E_v1_0
+    ----------------------------------------
+    Total                      1.964ns (0.842ns logic, 1.122ns route)
+                                       (42.9% logic, 57.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 14074 / 3209
+-------------------------------------------------------------------------
+Offset:              1.891ns (Levels of Logic = 5)
+  Source:            instrD<28> (PAD)
+  Destination:       E_grf_en (FF)
+  Destination Clock: clk rising
+
+  Data Path: instrD<28> to E_grf_en
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            10   0.001   0.553  instrD_28_IBUF (instrD_28_IBUF)
+     LUT3:I0->O            1   0.097   0.295  jiemakzq/jr2_SW0 (N62)
+     LUT6:I5->O            5   0.097   0.314  jiemakzq/jr2 (jiemakzq/jr2)
+     LUT4:I3->O            9   0.097   0.332  jiemakzq/GND_2_o_funct[5]_AND_1_o11 (jiemakzq/GND_2_o_funct[5]_AND_1_o1)
+     LUT4:I3->O            1   0.097   0.000  jiemakzq/grf_en1 (grf_en)
+     FDR:D                     0.008          E_grf_en
+    ----------------------------------------
+    Total                      1.891ns (0.397ns logic, 1.494ns route)
+                                       (21.0% logic, 79.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'jiemakzq/subu_lui_OR_51_o'
+  Total number of paths / destination ports: 1005 / 15
+-------------------------------------------------------------------------
+Offset:              3.025ns (Levels of Logic = 6)
+  Source:            instrD<28> (PAD)
+  Destination:       jiemakzq/a2_0 (LATCH)
+  Destination Clock: jiemakzq/subu_lui_OR_51_o falling
+
+  Data Path: instrD<28> to jiemakzq/a2_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            10   0.001   0.553  instrD_28_IBUF (instrD_28_IBUF)
+     LUT3:I0->O            1   0.097   0.295  jiemakzq/jr2_SW0 (N62)
+     LUT6:I5->O            5   0.097   0.575  jiemakzq/jr2 (jiemakzq/jr2)
+     LUT5:I1->O           41   0.097   0.801  jiemakzq/jr1 (instrbus<1>)
+     LUT6:I0->O            5   0.097   0.314  jiemakzq/Mmux_a1[4]_rs[0]_MUX_77_o111 (jiemakzq/Mmux_a1[4]_rs[0]_MUX_77_o11)
+     LUT2:I1->O            1   0.097   0.000  jiemakzq/Mmux_a1[4]_rs[0]_MUX_77_o11 (jiemakzq/a1[4]_rs[0]_MUX_77_o)
+     LD:D                     -0.028          jiemakzq/a1_0
+    ----------------------------------------
+    Total                      3.025ns (0.486ns logic, 2.539ns route)
+                                       (16.1% logic, 83.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'jiemakzq/subu_lui_OR_51_o'
+  Total number of paths / destination ports: 669984 / 33
+-------------------------------------------------------------------------
+Offset:              7.675ns (Levels of Logic = 49)
+  Source:            jiemakzq/a1_1 (LATCH)
+  Destination:       wnpc<31> (PAD)
+  Source Clock:      jiemakzq/subu_lui_OR_51_o falling
+
+  Data Path: jiemakzq/a1_1 to wnpc<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q             257   0.472   0.835  jiemakzq/a1_1 (jiemakzq/a1_1)
+     LUT6:I0->O            1   0.097   0.556  grf/Mmux_d1_81 (grf/Mmux_d1_81)
+     LUT6:I2->O            1   0.097   0.000  grf/Mmux_d1_3 (grf/Mmux_d1_3)
+     MUXF7:I1->O           3   0.279   0.703  grf/Mmux_d1_2_f7 (v1<0>)
+     LUT6:I0->O            1   0.097   0.000  cmp/Mcompar_V1[31]_V2[31]_equal_1_o_lut<0> (cmp/Mcompar_V1[31]_V2[31]_equal_1_o_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  cmp/Mcompar_V1[31]_V2[31]_equal_1_o_cy<0> (cmp/Mcompar_V1[31]_V2[31]_equal_1_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  cmp/Mcompar_V1[31]_V2[31]_equal_1_o_cy<1> (cmp/Mcompar_V1[31]_V2[31]_equal_1_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  cmp/Mcompar_V1[31]_V2[31]_equal_1_o_cy<2> (cmp/Mcompar_V1[31]_V2[31]_equal_1_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  cmp/Mcompar_V1[31]_V2[31]_equal_1_o_cy<3> (cmp/Mcompar_V1[31]_V2[31]_equal_1_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  cmp/Mcompar_V1[31]_V2[31]_equal_1_o_cy<4> (cmp/Mcompar_V1[31]_V2[31]_equal_1_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  cmp/Mcompar_V1[31]_V2[31]_equal_1_o_cy<5> (cmp/Mcompar_V1[31]_V2[31]_equal_1_o_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  cmp/Mcompar_V1[31]_V2[31]_equal_1_o_cy<6> (cmp/Mcompar_V1[31]_V2[31]_equal_1_o_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  cmp/Mcompar_V1[31]_V2[31]_equal_1_o_cy<7> (cmp/Mcompar_V1[31]_V2[31]_equal_1_o_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  cmp/Mcompar_V1[31]_V2[31]_equal_1_o_cy<8> (cmp/Mcompar_V1[31]_V2[31]_equal_1_o_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  cmp/Mcompar_V1[31]_V2[31]_equal_1_o_cy<9> (cmp/Mcompar_V1[31]_V2[31]_equal_1_o_cy<9>)
+     MUXCY:CI->O           3   0.253   0.305  cmp/Mcompar_V1[31]_V2[31]_equal_1_o_cy<10> (zero)
+     LUT2:I1->O           33   0.097   0.790  npc/Mmux_npc31011 (npc/Mmux_npc3101)
+     LUT6:I1->O            1   0.097   0.000  npc/Mmux_npc1_rs_lut<2> (npc/Mmux_npc1_rs_lut<2>)
+     MUXCY:S->O            1   0.353   0.000  npc/Mmux_npc1_rs_cy<2> (npc/Mmux_npc1_rs_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<3> (npc/Mmux_npc1_rs_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<4> (npc/Mmux_npc1_rs_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<5> (npc/Mmux_npc1_rs_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<6> (npc/Mmux_npc1_rs_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<7> (npc/Mmux_npc1_rs_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<8> (npc/Mmux_npc1_rs_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<9> (npc/Mmux_npc1_rs_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<10> (npc/Mmux_npc1_rs_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<11> (npc/Mmux_npc1_rs_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<12> (npc/Mmux_npc1_rs_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<13> (npc/Mmux_npc1_rs_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<14> (npc/Mmux_npc1_rs_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<15> (npc/Mmux_npc1_rs_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<16> (npc/Mmux_npc1_rs_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<17> (npc/Mmux_npc1_rs_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<18> (npc/Mmux_npc1_rs_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<19> (npc/Mmux_npc1_rs_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<20> (npc/Mmux_npc1_rs_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<21> (npc/Mmux_npc1_rs_cy<21>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<22> (npc/Mmux_npc1_rs_cy<22>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<23> (npc/Mmux_npc1_rs_cy<23>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<24> (npc/Mmux_npc1_rs_cy<24>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<25> (npc/Mmux_npc1_rs_cy<25>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<26> (npc/Mmux_npc1_rs_cy<26>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<27> (npc/Mmux_npc1_rs_cy<27>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<28> (npc/Mmux_npc1_rs_cy<28>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<29> (npc/Mmux_npc1_rs_cy<29>)
+     MUXCY:CI->O           0   0.023   0.000  npc/Mmux_npc1_rs_cy<30> (npc/Mmux_npc1_rs_cy<30>)
+     XORCY:CI->O           1   0.370   0.693  npc/Mmux_npc1_rs_xor<31> (npc/Mmux_npc1_split<31>)
+     LUT6:I0->O            1   0.097   0.279  npc/Mmux_npc325 (wnpc_31_OBUF)
+     OBUF:I->O                 0.000          wnpc_31_OBUF (wnpc<31>)
+    ----------------------------------------
+    Total                      7.675ns (3.513ns logic, 4.162ns route)
+                                       (45.8% logic, 54.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 989180 / 189
+-------------------------------------------------------------------------
+Offset:              7.295ns (Levels of Logic = 49)
+  Source:            grf/r_31_160 (FF)
+  Destination:       wnpc<31> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: grf/r_31_160 to wnpc<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             3   0.361   0.566  grf/r_31_160 (grf/r_31_160)
+     LUT6:I2->O            1   0.097   0.556  grf/Mmux_d1_81 (grf/Mmux_d1_81)
+     LUT6:I2->O            1   0.097   0.000  grf/Mmux_d1_3 (grf/Mmux_d1_3)
+     MUXF7:I1->O           3   0.279   0.703  grf/Mmux_d1_2_f7 (v1<0>)
+     LUT6:I0->O            1   0.097   0.000  cmp/Mcompar_V1[31]_V2[31]_equal_1_o_lut<0> (cmp/Mcompar_V1[31]_V2[31]_equal_1_o_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  cmp/Mcompar_V1[31]_V2[31]_equal_1_o_cy<0> (cmp/Mcompar_V1[31]_V2[31]_equal_1_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  cmp/Mcompar_V1[31]_V2[31]_equal_1_o_cy<1> (cmp/Mcompar_V1[31]_V2[31]_equal_1_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  cmp/Mcompar_V1[31]_V2[31]_equal_1_o_cy<2> (cmp/Mcompar_V1[31]_V2[31]_equal_1_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  cmp/Mcompar_V1[31]_V2[31]_equal_1_o_cy<3> (cmp/Mcompar_V1[31]_V2[31]_equal_1_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  cmp/Mcompar_V1[31]_V2[31]_equal_1_o_cy<4> (cmp/Mcompar_V1[31]_V2[31]_equal_1_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  cmp/Mcompar_V1[31]_V2[31]_equal_1_o_cy<5> (cmp/Mcompar_V1[31]_V2[31]_equal_1_o_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  cmp/Mcompar_V1[31]_V2[31]_equal_1_o_cy<6> (cmp/Mcompar_V1[31]_V2[31]_equal_1_o_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  cmp/Mcompar_V1[31]_V2[31]_equal_1_o_cy<7> (cmp/Mcompar_V1[31]_V2[31]_equal_1_o_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  cmp/Mcompar_V1[31]_V2[31]_equal_1_o_cy<8> (cmp/Mcompar_V1[31]_V2[31]_equal_1_o_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  cmp/Mcompar_V1[31]_V2[31]_equal_1_o_cy<9> (cmp/Mcompar_V1[31]_V2[31]_equal_1_o_cy<9>)
+     MUXCY:CI->O           3   0.253   0.305  cmp/Mcompar_V1[31]_V2[31]_equal_1_o_cy<10> (zero)
+     LUT2:I1->O           33   0.097   0.790  npc/Mmux_npc31011 (npc/Mmux_npc3101)
+     LUT6:I1->O            1   0.097   0.000  npc/Mmux_npc1_rs_lut<2> (npc/Mmux_npc1_rs_lut<2>)
+     MUXCY:S->O            1   0.353   0.000  npc/Mmux_npc1_rs_cy<2> (npc/Mmux_npc1_rs_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<3> (npc/Mmux_npc1_rs_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<4> (npc/Mmux_npc1_rs_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<5> (npc/Mmux_npc1_rs_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<6> (npc/Mmux_npc1_rs_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<7> (npc/Mmux_npc1_rs_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<8> (npc/Mmux_npc1_rs_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<9> (npc/Mmux_npc1_rs_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<10> (npc/Mmux_npc1_rs_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<11> (npc/Mmux_npc1_rs_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<12> (npc/Mmux_npc1_rs_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<13> (npc/Mmux_npc1_rs_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<14> (npc/Mmux_npc1_rs_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<15> (npc/Mmux_npc1_rs_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<16> (npc/Mmux_npc1_rs_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<17> (npc/Mmux_npc1_rs_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<18> (npc/Mmux_npc1_rs_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<19> (npc/Mmux_npc1_rs_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<20> (npc/Mmux_npc1_rs_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<21> (npc/Mmux_npc1_rs_cy<21>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<22> (npc/Mmux_npc1_rs_cy<22>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<23> (npc/Mmux_npc1_rs_cy<23>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<24> (npc/Mmux_npc1_rs_cy<24>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<25> (npc/Mmux_npc1_rs_cy<25>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<26> (npc/Mmux_npc1_rs_cy<26>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<27> (npc/Mmux_npc1_rs_cy<27>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<28> (npc/Mmux_npc1_rs_cy<28>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<29> (npc/Mmux_npc1_rs_cy<29>)
+     MUXCY:CI->O           0   0.023   0.000  npc/Mmux_npc1_rs_cy<30> (npc/Mmux_npc1_rs_cy<30>)
+     XORCY:CI->O           1   0.370   0.693  npc/Mmux_npc1_rs_xor<31> (npc/Mmux_npc1_split<31>)
+     LUT6:I0->O            1   0.097   0.279  npc/Mmux_npc325 (wnpc_31_OBUF)
+     OBUF:I->O                 0.000          wnpc_31_OBUF (wnpc<31>)
+    ----------------------------------------
+    Total                      7.295ns (3.402ns logic, 3.893ns route)
+                                       (46.6% logic, 53.4% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 16337 / 33
+-------------------------------------------------------------------------
+Delay:               5.516ns (Levels of Logic = 37)
+  Source:            instrD<28> (PAD)
+  Destination:       wnpc<31> (PAD)
+
+  Data Path: instrD<28> to wnpc<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            10   0.001   0.553  instrD_28_IBUF (instrD_28_IBUF)
+     LUT3:I0->O            1   0.097   0.295  jiemakzq/jr2_SW0 (N62)
+     LUT6:I5->O            5   0.097   0.575  jiemakzq/jr2 (jiemakzq/jr2)
+     LUT5:I1->O           41   0.097   0.791  jiemakzq/jr1 (instrbus<1>)
+     LUT5:I0->O           29   0.097   0.402  npc/Mmux_npc1_B111 (npc/Mmux_npc1_B11)
+     LUT3:I2->O            1   0.097   0.000  npc/Mmux_npc1_rs_lut<3> (npc/Mmux_npc1_rs_lut<3>)
+     MUXCY:S->O            1   0.353   0.000  npc/Mmux_npc1_rs_cy<3> (npc/Mmux_npc1_rs_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<4> (npc/Mmux_npc1_rs_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<5> (npc/Mmux_npc1_rs_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<6> (npc/Mmux_npc1_rs_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<7> (npc/Mmux_npc1_rs_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<8> (npc/Mmux_npc1_rs_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<9> (npc/Mmux_npc1_rs_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<10> (npc/Mmux_npc1_rs_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<11> (npc/Mmux_npc1_rs_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<12> (npc/Mmux_npc1_rs_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<13> (npc/Mmux_npc1_rs_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<14> (npc/Mmux_npc1_rs_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<15> (npc/Mmux_npc1_rs_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<16> (npc/Mmux_npc1_rs_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<17> (npc/Mmux_npc1_rs_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<18> (npc/Mmux_npc1_rs_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<19> (npc/Mmux_npc1_rs_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<20> (npc/Mmux_npc1_rs_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<21> (npc/Mmux_npc1_rs_cy<21>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<22> (npc/Mmux_npc1_rs_cy<22>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<23> (npc/Mmux_npc1_rs_cy<23>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<24> (npc/Mmux_npc1_rs_cy<24>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<25> (npc/Mmux_npc1_rs_cy<25>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<26> (npc/Mmux_npc1_rs_cy<26>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<27> (npc/Mmux_npc1_rs_cy<27>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<28> (npc/Mmux_npc1_rs_cy<28>)
+     MUXCY:CI->O           1   0.023   0.000  npc/Mmux_npc1_rs_cy<29> (npc/Mmux_npc1_rs_cy<29>)
+     MUXCY:CI->O           0   0.023   0.000  npc/Mmux_npc1_rs_cy<30> (npc/Mmux_npc1_rs_cy<30>)
+     XORCY:CI->O           1   0.370   0.693  npc/Mmux_npc1_rs_xor<31> (npc/Mmux_npc1_split<31>)
+     LUT6:I0->O            1   0.097   0.279  npc/Mmux_npc325 (wnpc_31_OBUF)
+     OBUF:I->O                 0.000          wnpc_31_OBUF (wnpc<31>)
+    ----------------------------------------
+    Total                      5.516ns (1.927ns logic, 3.589ns route)
+                                       (34.9% logic, 65.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+-------------------------+---------+---------+---------+---------+
+                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------+---------+---------+---------+---------+
+clk                      |    1.964|         |         |         |
+jiemakzq/subu_lui_OR_51_o|         |    2.344|         |         |
+-------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 10.73 secs
+ 
+--> 
+
+Total memory usage is 355332 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   66 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

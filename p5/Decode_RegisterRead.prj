@@ -1,0 +1,7 @@
+verilog work "mux.v"
+verilog work "grf.v"
+verilog work "EXT.v"
+verilog work "DASM.v"
+verilog work "control.v"
+verilog work "CMP.v"
+verilog work "Decode_RegisterRead.v"

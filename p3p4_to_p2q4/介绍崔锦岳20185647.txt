@@ -1,0 +1,5 @@
+﻿我重写了一遍p2q4仅使用addu, subu,sll, ori, lw, sw, beq, bne,j, jal, jr,slt
+能跑起来算吗？？
+完成了p2q4到p4的闭环测试
+
+github链接https://github.com/3BPM/CO-study

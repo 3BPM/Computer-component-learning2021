@@ -1,0 +1,6 @@
+verilog work "npc.v"
+verilog work "jiemakzq.v"
+verilog work "grf.v"
+verilog work "ext.v"
+verilog work "cmp.v"
+verilog work "Dji.v"

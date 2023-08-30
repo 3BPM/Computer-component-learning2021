@@ -1,0 +1,5 @@
+verilog work "pc.v"
+verilog work "im.v"
+verilog work "Iji.v"
+verilog work "Iji_t.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

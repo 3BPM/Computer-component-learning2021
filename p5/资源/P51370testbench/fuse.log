@@ -1,0 +1,25 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe --nodebug --prj mips.prj -o mips.exe mips_tb 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 16
+Turning on mult-threading, number of parallel sub-compilation jobs: 32 
+Determining compilation order of HDL files
+Analyzing Verilog file "G:\P51370testbench\ALU.v" into library work
+Analyzing Verilog file "G:\P51370testbench\CMP.v" into library work
+Analyzing Verilog file "G:\P51370testbench\control.v" into library work
+Analyzing Verilog file "G:\P51370testbench\DASM.v" into library work
+Analyzing Verilog file "G:\P51370testbench\decoder.v" into library work
+Analyzing Verilog file "G:\P51370testbench\Decode_RegisterRead.v" into library work
+Analyzing Verilog file "G:\P51370testbench\DM.v" into library work
+Analyzing Verilog file "G:\P51370testbench\Execute.v" into library work
+Analyzing Verilog file "G:\P51370testbench\EXT.v" into library work
+Analyzing Verilog file "G:\P51370testbench\grf.v" into library work
+Analyzing Verilog file "G:\P51370testbench\IM.v" into library work
+Analyzing Verilog file "G:\P51370testbench\Instruction_Fetch.v" into library work
+Analyzing Verilog file "G:\P51370testbench\Memory.v" into library work
+Analyzing Verilog file "G:\P51370testbench\mips.v" into library work
+Analyzing Verilog file "G:\P51370testbench\mips_tb.v" into library work
+Analyzing Verilog file "G:\P51370testbench\mux.v" into library work
+Analyzing Verilog file "G:\P51370testbench\nextPC.v" into library work
+Analyzing Verilog file "G:\P51370testbench\pc.v" into library work
+Analyzing Verilog file "G:\P51370testbench\tb.v" into library work
+Starting static elaboration

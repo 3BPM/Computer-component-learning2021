@@ -1,0 +1,49 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/CH/Desktop/verilog/p5/mips_t_isim_beh.exe -prj C:/Users/CH/Desktop/verilog/p5/mips_t_beh.prj work.mips_t work.glbl 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/CH/Desktop/verilog/p5/pc.v" into library work
+Analyzing Verilog file "C:/Users/CH/Desktop/verilog/p5/npc.v" into library work
+Analyzing Verilog file "C:/Users/CH/Desktop/verilog/p5/jiemakzq.v" into library work
+Analyzing Verilog file "C:/Users/CH/Desktop/verilog/p5/im.v" into library work
+Analyzing Verilog file "C:/Users/CH/Desktop/verilog/p5/grf.v" into library work
+Analyzing Verilog file "C:/Users/CH/Desktop/verilog/p5/ext.v" into library work
+Analyzing Verilog file "C:/Users/CH/Desktop/verilog/p5/dm.v" into library work
+Analyzing Verilog file "C:/Users/CH/Desktop/verilog/p5/cmp.v" into library work
+Analyzing Verilog file "C:/Users/CH/Desktop/verilog/p5/alu.v" into library work
+Analyzing Verilog file "C:/Users/CH/Desktop/verilog/p5/shallu.v" into library work
+Analyzing Verilog file "C:/Users/CH/Desktop/verilog/p5/Mji.v" into library work
+Analyzing Verilog file "C:/Users/CH/Desktop/verilog/p5/Iji.v" into library work
+Analyzing Verilog file "C:/Users/CH/Desktop/verilog/p5/Eji.v" into library work
+Analyzing Verilog file "C:/Users/CH/Desktop/verilog/p5/Dji.v" into library work
+Analyzing Verilog file "C:/Users/CH/Desktop/verilog/p5/mips.v" into library work
+Analyzing Verilog file "C:/Users/CH/Desktop/verilog/p5/mips_t.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 180844 KB
+Fuse CPU Usage: 796 ms
+Compiling module pc
+Compiling module im
+Compiling module Iji
+Compiling module jiemakzq
+Compiling module ext
+Compiling module grf
+Compiling module cmp
+Compiling module npc
+Compiling module Dji
+Compiling module alu
+Compiling module Eji
+Compiling module dm
+Compiling module Mji
+Compiling module shallu
+Compiling module mips
+Compiling module mips_t
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 2 sub-compilation(s) to finish...
+Compiled 17 Verilog Units
+Built simulation executable C:/Users/CH/Desktop/verilog/p5/mips_t_isim_beh.exe
+Fuse Memory Usage: 188476 KB
+Fuse CPU Usage: 1124 ms

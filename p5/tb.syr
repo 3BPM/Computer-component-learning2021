@@ -1,0 +1,221 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: tb.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "tb.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "tb"
+Output Format                      : NGC
+Target Device                      : xc7a200t-3-fbg484
+
+---- Source Options
+Top Module Name                    : tb
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\myCO\p5\pc.v" into library work
+Parsing module <pc>.
+Analyzing Verilog file "E:\myCO\p5\mux.v" into library work
+Parsing module <mux2_32>.
+Parsing module <mux3_5>.
+Parsing module <mux3_32>.
+Analyzing Verilog file "E:\myCO\p5\IM.v" into library work
+Parsing module <IM>.
+Analyzing Verilog file "E:\myCO\p5\grf.v" into library work
+Parsing module <GRF>.
+Analyzing Verilog file "E:\myCO\p5\EXT.v" into library work
+Parsing module <EXT>.
+Analyzing Verilog file "E:\myCO\p5\DM.v" into library work
+Parsing module <DM>.
+Analyzing Verilog file "E:\myCO\p5\DASM.v" into library work
+Parsing module <DASM>.
+Analyzing Verilog file "E:\myCO\p5\control.v" into library work
+Parsing module <ctrl>.
+Analyzing Verilog file "E:\myCO\p5\CMP.v" into library work
+Parsing module <CMP>.
+Analyzing Verilog file "E:\myCO\p5\ALU.v" into library work
+Parsing module <ALU>.
+Analyzing Verilog file "E:\myCO\p5\Memory.v" into library work
+Parsing module <Memory>.
+Analyzing Verilog file "E:\myCO\p5\Instruction_Fetch.v" into library work
+Parsing module <Instruction_Fetch>.
+Analyzing Verilog file "E:\myCO\p5\Execute.v" into library work
+Parsing module <Execute>.
+Analyzing Verilog file "E:\myCO\p5\Decode_RegisterRead.v" into library work
+Parsing module <Decode_RegisterRead>.
+Analyzing Verilog file "E:\myCO\p5\mips.v" into library work
+Parsing module <mips>.
+Analyzing Verilog file "E:\myCO\p5\tb.v" into library work
+Parsing module <tb>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <tb>.
+WARNING:HDLCompiler:872 - "E:\myCO\p5\tb.v" Line 37: Using initial value of reset since it is never assigned
+
+Elaborating module <mips>.
+
+Elaborating module <Instruction_Fetch>.
+
+Elaborating module <pc>.
+
+Elaborating module <IM>.
+Reading initialization file \"code.txt\".
+WARNING:HDLCompiler:1670 - "E:\myCO\p5\IM.v" Line 9: Signal <im> in initial block is partially initialized.
+
+Elaborating module <DASM>.
+ERROR:HDLCompiler:569 - "E:\myCO\p5\DASM.v" Line 266: Loop count limit exceeded. Condition is never false.
+Module DASM remains a blackbox, due to errors in its contents
+WARNING:HDLCompiler:1499 - "E:\myCO\p5\DASM.v" Line 84: Empty module <DASM> remains a black box.
+
+Elaborating module <Decode_RegisterRead>.
+
+Elaborating module <ctrl>.
+WARNING:HDLCompiler:413 - "E:\myCO\p5\control.v" Line 87: Result of 32-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "E:\myCO\p5\control.v" Line 96: Result of 32-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "E:\myCO\p5\control.v" Line 107: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "E:\myCO\p5\control.v" Line 111: Result of 32-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "E:\myCO\p5\control.v" Line 124: Result of 32-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "E:\myCO\p5\control.v" Line 128: Result of 32-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:1127 - "E:\myCO\p5\Decode_RegisterRead.v" Line 136: Assignment to s ignored, since the identifier is never used
+
+Elaborating module <GRF>.
+"E:\myCO\p5\grf.v" Line 41. $display  32'b................................ 5'b..... 32'b................................
+
+Elaborating module <EXT>.
+
+Elaborating module <CMP>.
+WARNING:HDLCompiler:1127 - "E:\myCO\p5\CMP.v" Line 32: Assignment to gt0 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\myCO\p5\CMP.v" Line 34: Assignment to lastzero ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\myCO\p5\CMP.v" Line 35: Assignment to oddzero ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\myCO\p5\CMP.v" Line 36: Assignment to isov ignored, since the identifier is never used
+
+Elaborating module <mux3_32>.
+WARNING:HDLCompiler:413 - "E:\myCO\p5\Decode_RegisterRead.v" Line 336: Result of 32-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "E:\myCO\p5\Decode_RegisterRead.v" Line 354: Result of 32-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "E:\myCO\p5\Decode_RegisterRead.v" Line 369: Result of 32-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "E:\myCO\p5\Decode_RegisterRead.v" Line 384: Result of 32-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:1127 - "E:\myCO\p5\mips.v" Line 71: Assignment to rsD0 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\myCO\p5\mips.v" Line 72: Assignment to rtD0 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\myCO\p5\mips.v" Line 73: Assignment to rdD0 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\myCO\p5\mips.v" Line 83: Assignment to StallD ignored, since the identifier is never used
+WARNING:HDLCompiler:1016 - "E:\myCO\p5\Execute.v" Line 135: Port s is not connected to this instance
+
+Elaborating module <Execute>.
+
+Elaborating module <mux2_32>.
+
+Elaborating module <mux3_5>.
+
+Elaborating module <ALU>.
+WARNING:HDLCompiler:552 - "E:\myCO\p5\Execute.v" Line 135: Input port s[4] is not connected on this instance
+
+Elaborating module <Memory>.
+WARNING:HDLCompiler:413 - "E:\myCO\p5\Memory.v" Line 57: Result of 5-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:1127 - "E:\myCO\p5\Memory.v" Line 57: Assignment to WriteReg ignored, since the identifier is never used
+
+Elaborating module <DM>.
+"E:\myCO\p5\DM.v" Line 38. $display  32'b................................ 32'b................................ 32'b................................
+WARNING:HDLCompiler:634 - "E:\myCO\p5\mips.v" Line 115: Net <FlushE> does not have a driver.
+--> 
+
+Total memory usage is 5943716 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :   27 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

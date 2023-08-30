@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/CH/Desktop/verilog/p5/mips_t_isim_beh.exe" -prj "C:/Users/CH/Desktop/verilog/p5/mips_t_beh.prj" "work.mips_t" "work.glbl" 

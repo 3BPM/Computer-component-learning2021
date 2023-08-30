@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/CH/Desktop/verilog/p5/Iji.xst" -ofn "C:/Users/CH/Desktop/verilog/p5/Iji.syr" 
+xst -intstyle ise -ifn "C:/Users/CH/Desktop/verilog/p5/Iji.xst" -ofn "C:/Users/CH/Desktop/verilog/p5/Iji.syr" 

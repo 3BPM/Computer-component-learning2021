@@ -1,0 +1,38 @@
+
+
+
+// Instantiate the module
+Dji instance_name (
+    .nE_pc(nE_pc), 
+    .nE_e32(nE_e32), 
+    .nE_instrbus(nE_instrbus), 
+    .nE_grf_en(nE_grf_en), 
+    .nE_a3(nE_a3), 
+    .M_vin(M_vin), 
+    .M_grf_en(M_grf_en), 
+    .M_a3(M_a3), 
+    .shall(shall), 
+    .pccon(pccon), 
+    .reset(reset), 
+    .clk(clk), 
+    .instrD(instrD), 
+    .pc4D(pc4D), 
+    .wnpc(wnpc), 
+    .E_a1(E_a1), 
+    .E_a2(E_a2), 
+    .E_a3(E_a3), 
+    .E_v1(E_v1), 
+    .E_v2(E_v2), 
+    .E_grf_en(E_grf_en), 
+    .E_dm_en(E_dm_en), 
+    .E_e32(E_e32), 
+    .E_pc(E_pc), 
+    .E_instrbus(E_instrbus), 
+    .W_a3(W_a3), 
+    .W_grf_en(W_grf_en), 
+    .W_vin(W_vin), 
+    .W_pc(W_pc), 
+    .W_instrbus(W_instrbus)
+    );
+
+
